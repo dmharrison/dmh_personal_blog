@@ -1,21 +1,8 @@
-const toggle = document.querySelector('#toggle');
-const holder = document.querySelector('.holder');
-const header= document.querySelector('.header')
+console.log('you are linked');
+// query selectors for the correlating information to be stored
+const usernameInput = document.getElementById('username');
+const titleInput = document.getElementById('title');
+const storyInput= document.getElementById('story');
+const submitBtn= document.getElementsByClassName('submit-btn')
 
-// Set default mode to dark
-let mode = 'light';
-
-// Listen for a click event on toggle switch
-toggle.addEventListener('click', function () {
-  // If mode is light, apply dark background
-  if (mode === 'light') {
-    mode = 'dark';
-    holder.setAttribute('class', 'dark');
-    
-  }
-  // If mode is dark, apply light background
-  else {
-    mode = 'light';
-    holder.setAttribute('class', 'light');
-  }
-});
+// add and event listener to the submit button and save the object to the local storage on the form page

@@ -10,31 +10,37 @@
 
 <body>
     <!-- plain header with a toggle -->
-    <header>
-        <!-- toggle light and dark button -->
-        <button class="toggle"></button>
-    </header>
-    <!-- main -->
-    <!-- want a img div on the left and form div on the right -->
-    <main class="container">
-        <div class="img-box">
-            <div class="circle">My first blog</div>
-        </div>
-        <div class="userForm">
-            <h1>What's on your mind?</h1>
-            <form class="form" action="#blog">
-                <label for="username">Username:</label>
-                <input type="text" id="username" placeholder="Username"><br>
-                <label for="title">Title:</label>
-                <input type="text" id="title" placeholder="Title"><br>
-                <label for="content">Content:</label><br>
-                <textarea id="story" name="story" rows="5" cols="33">Type Something Great!</textarea><br>
-                <!-- <input type="text" id="content" placeholder="Type Something Great!"> -->
-                <input type="submit">
-            </form>
-        </div>
+    <div class="holder">
+        <header class="header">
+            <!-- toggle light and dark button -->
+            <label class="switch col">
+                <input type="checkbox" id="toggle">
+                <span class="slider round"></span>
+            </label>
+            <div class="col">
+        </header>
+        <!-- main -->
+        <!-- want a img div on the left and form div on the right -->
+        <main class="container" id="temp">
+            <div class="img-box">
+                <figure class="circle">My First Blog</figure>
+            </div>
+            <div class="userForm">
+                <h1>What's on your mind?</h1>
+                <form class="form" action="#blog">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Username"><br>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" placeholder="Title"><br>
+                    <label for="content">Content:</label><br>
+                    <textarea id="story" name="story" rows="5" cols="33">Type Something Great!</textarea><br>
+                    <!-- <input type="text" id="content" placeholder="Type Something Great!"> -->
+                    <input class="submit-btn" type="submit">
+                </form>
+            </div>
 
-    </main>
+        </main>
+    </div>
     <!-- no footer -->
     <script src="./assets/js/form.js"></script>
 </body>

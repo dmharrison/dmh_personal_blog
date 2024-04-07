@@ -10,21 +10,31 @@ const displayBlog = function() {
     let blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
     let blog = document.querySelector('#blog');
     
+    
 // iterate over each blog post and create elements for the username, title and story
     blogPosts.forEach(function(blogPost) {
-        let usernameElement = document.createElement('h2');
+        let usernameElement = document.createElement('h3');
         usernameElement.textContent = `${blogPost.username}`;
 
-        let titleElement = document.createElement('h3');
+        let titleElement = document.createElement('h2');
         titleElement.textContent = blogPost.title;
 
         let storyElement = document.createElement('p');
         storyElement.textContent = blogPost.story;
+        // loop through the blog post data and create a box for each post
+        const blogBox = document.createElement('div');
+        blogBox.classList.add('blog-box');
+        blogBox.innerHTML=`
+        <h2>${blogPost.title}</h2>
+        <p>${blogPost.story}</p>
+        <h3>${blogPost.username}</h3>`;
+
 // append them to the blog element
-        blog.appendChild(usernameElement);
-        blog.appendChild(titleElement);
-        blog.appendChild(storyElement);
+        
+        blog.appendChild(blogBox);
+        
     });
+    console.log('Blog posts displayed successfully.');
 }
 
 displayBlog();

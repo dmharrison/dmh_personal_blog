@@ -11,6 +11,15 @@ header{
     border-bottom:thick solid black;
     margin-bottom: 10px;
 }
+nav{
+    display: flex;
+    align-items: center;
+}
+#backbutton{
+    display: flex;
+}
+
+
 .switch {
     position: relative;
     display: inline-block;
@@ -80,4 +89,13 @@ input:checked + .slider:before {
 
 .col {
     margin: 20px;
+}
+
+.blog-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    width: 90%;
 }

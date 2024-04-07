@@ -3,6 +3,24 @@ console.log('you are linked');
 const usernameInput = document.getElementById('username');
 const titleInput = document.getElementById('title');
 const storyInput= document.getElementById('story');
-const submitBtn= document.getElementsByClassName('submit-btn')
+const submitBtn= document.getElementById('save');
 
-// add and event listener to the submit button and save the object to the local storage on the form page
+// add an event listener to the submit button and save the object to the local storage on the form page
+submitBtn.addEventListener('click', function(){
+    // event.preventDefault();
+    // Retrieve existing blog posts from local storage or initialize an empty array
+    let existingBlogPosts = JSON.parse(localStorage.getItem('blogPosts')) || []
+    
+    
+    const newblogPost={
+        username: usernameInput.value,
+        title: titleInput.value,
+        story: storyInput.value,
+    };
+    // add the new blog post to the existing blog posts array and put it at the top of the page
+    existingBlogPosts.unshift(newblogPost);
+// save the updated blog posts array back to the local storage 
+    localStorage.setItem('blogPosts', JSON.stringify(existingBlogPosts));
+    // display the blog posts
+    displayBlog();
+});

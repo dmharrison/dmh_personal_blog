@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DMH Blog</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
 </head>
 
 <body>
     <!-- start of header -->
     <!-- Plain with a button to toggle light and dark mode in the form -->
     <!-- Want My first blog H1 in blog page with a back button and toggle -->
-    <header>
-        <h2>My First Blog</h2>
-        <nav>
-            <button class="back">Back </button>
-        </nav>
-    </header>
-    <!-- Main section -->
-    <!-- want to have boxes that save the content from the form -->
-    <main>
-        <div id="blog">
+    <div class="holder">
+        <header>
+            <h2>My First Blog</h2>
+            <nav>
+                <button id="backbutton">Back </button>
+                <label class="switch col">
+                    <input type="checkbox" id="toggle">
+                    <span class="slider round"></span>
+                </label>
+                <div class="col"></div>
+            </nav>
+        </header>
+        <!-- Main section -->
+        <!-- want to have boxes that save the content from the form -->
+        <main>
+            <div id="blog">
 
 
-        </div>
-    </main>
-    <!-- footer with links to my email portfolio -->
-    <footer></footer>
+            </div>
+        </main>
+        <!-- footer with links to my email portfolio -->
+        <footer></footer>
+    </div>
 
 
     <script src="./assets/js/blog.js"></script>
-    <!-- <script src="./assets/js/logic.js"></script> -->
+    <script src="./assets/js/logic.js"></script>
 </body>

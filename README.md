@@ -67,7 +67,7 @@ my-blog
 
 ## Deployed Site Link
 
-[GitHub Pages]
+[GitHub Pages] https://dmharrison.github.io/dmh_personal_blog/
 
 ## Active Links
 

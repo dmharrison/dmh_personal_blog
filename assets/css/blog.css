@@ -147,6 +147,6 @@ background-color: midnightblue;
 .dark footer{
     border-top:thick solid white ;
 }
-.blog-box h2{
+.dark .blog-box h2{
     border-bottom: solid white ;
 }

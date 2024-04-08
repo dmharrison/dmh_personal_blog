@@ -178,4 +178,9 @@ input:checked + .slider:before {
 .col {
     margin: 20px;
 }
-
+#warning{
+    color: red;
+}
+.dark #warning{
+    color: hotpink
+}

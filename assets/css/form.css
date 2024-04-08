@@ -84,7 +84,19 @@ h1{
     background-color: white;
     color: black
 }
+.dark header{
+    border-bottom:thick solid white ;
+}
+.dark #temp{
+    border-top: thick solid white;
+}
+.dark .img-box{
+border-right: thick solid white ;
+}
 
+.dark .userForm{
+border-left:thick solid white ;
+}
 /* light mode */
 .light{
     background-color: white;

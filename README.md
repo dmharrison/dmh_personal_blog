@@ -12,6 +12,11 @@ I WANT a personal blog
 SO THAT I can showcase my thoughts and experiences.
 ```
 
+<img alt="screenshot" src="./assets/images/Screenshot light.png">
+<img alt="screenshot" src="./assets/images/Screenshot dark.png">
+<img alt="screenshot" src="./assets/images/blog light.png">
+<img alt="screenshot" src="./assets/images/blog dark.png">
+
 ## Acceptance Criteria
 
 ```md
@@ -62,12 +67,11 @@ my-blog
 
 ## Deployed Site Link
 
-[GitHub Pages] https://dmharrison.github.io/dmh_professional_portfolio/
+[GitHub Pages]
 
 ## Active Links
 
--Github
--Spotify
+https://dmharrison.github.io/dmh_professional_portfolio/
 
 ## License
 

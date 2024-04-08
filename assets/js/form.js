@@ -9,7 +9,7 @@ const submitBtn= document.getElementById('save');
 submitBtn.addEventListener('click', function(){
     // event.preventDefault();
     // Retrieve existing blog posts from local storage or initialize an empty array
-    let existingBlogPosts = JSON.parse(localStorage.getItem('blogPosts')) || []
+    let existingBlogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
     
     
     const newblogPost={
@@ -24,3 +24,6 @@ submitBtn.addEventListener('click', function(){
     // display the blog posts
     displayBlog();
 });
+
+// alert if any form section is left blank
+// submitBtn.addEventListener.apply('click', function sendAlert(eventD))

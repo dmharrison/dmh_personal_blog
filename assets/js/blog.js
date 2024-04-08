@@ -27,12 +27,13 @@ const displayBlog = function() {
         blogBox.innerHTML=`
         <h2>${blogPost.title}</h2>
         <p>${blogPost.story}</p>
-        <h3>${blogPost.username}</h3>`;
+        <h3>posted by ${blogPost.username}</h3>`;
 
 // append them to the blog element
         
         blog.appendChild(blogBox);
-        
+        // blog.appendChild(storyElement);
+        // blog.appendChild(usernameElement);
     });
     console.log('Blog posts displayed successfully.');
 }

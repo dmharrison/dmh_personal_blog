@@ -90,12 +90,63 @@ input:checked + .slider:before {
 .col {
     margin: 20px;
 }
+main{
+    border-top: thick solid black;
+    border-bottom: thick solid black;
+
+}
 
 .blog-box {
-    border: 1px solid #ccc;
+    border: 1px solid black;
     padding: 10px;
     margin-bottom: 10px;
     margin: 10px;
     background-color: #f9f9f9;
     width: 90%;
+}
+.blog-box h2{
+      border-bottom: solid black  ;
+}
+.blog-box p{
+    padding-bottom: 5%;
+}
+.blog-box h3{
+    font-size: 15px;
+}
+
+
+footer{
+    margin-top: 10px;
+    border-top: thick solid black;
+}
+footer h5{
+    text-align: center;
+}
+
+.dark{
+    background-color: midnightblue;
+    color: yellow;
+}
+.dark main{
+    border-bottom:thick solid white ;
+    border-top:thick solid white ;
+}
+
+.dark .submit-btn{
+    background-color: white;
+    color: black
+}
+.dark header{
+    border-bottom:thick solid white ;
+}
+
+.dark .blog-box{
+border: solid white;
+background-color: midnightblue;
+}
+.dark footer{
+    border-top:thick solid white ;
+}
+.blog-box h2{
+    border-bottom: solid white ;
 }
